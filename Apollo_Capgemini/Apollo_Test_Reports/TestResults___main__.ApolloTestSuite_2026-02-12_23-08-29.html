@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apollo 24/7 Automation Test Suite Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Apollo 24/7 Automation Test Suite Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2026-02-12 23:08:30</p>
+                <p class='attribute'><strong>Duration: </strong>135.20 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 6, Pass: 4, Error: 1, Skip: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.ApolloTestSuite</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_Add_To_Cart_From_Blog</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()="Guide for Mounjaro Dosage: How to Use Mounjaro for Diabetes and Weight Loss?"]"}
+  (Session info: chrome=144.0.7559.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7a544f3d5
+	0x7ff7a544f430
+	0x7ff7a51f10bd
+	0x7ff7a524c2fe
+	0x7ff7a524c60c
+	0x7ff7a529d187
+	0x7ff7a5299d08
+	0x7ff7a523cb0c
+	0x7ff7a523da53
+	0x7ff7a572b470
+	0x7ff7a572586d
+	0x7ff7a574621a
+	0x7ff7a546b235
+	0x7ff7a5473a5c
+	0x7ff7a5458844
+	0x7ff7a54589f6
+	0x7ff7a543eb87
+	0x7ffc7ccee8d7
+	0x7ffc7d20c53c
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Samiksha Bandgar\PycharmProjects\Apollo_Capgemini\test_suite.py", line 92, in test_Add_To_Cart_From_Blog
+    blog.add_to_cart_flow()
+  File "C:\Users\Samiksha Bandgar\PycharmProjects\Apollo_Capgemini\Apollo_Capgemini\Scripts\POM_Pages\BlogHomePage.py", line 51, in add_to_cart_flow
+    wrapper.scroll_to_element(self.first_article)
+  File "C:\Users\Samiksha Bandgar\PycharmProjects\Apollo_Capgemini\Apollo_Capgemini\Scripts\Utilities\Gen_Utility.py", line 45, in scroll_to_element
+    element=self.driver.find_element(*locator)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samiksha Bandgar\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\remote\webdriver.py", line 926, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samiksha Bandgar\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Samiksha Bandgar\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()="Guide for Mounjaro Dosage: How to Use Mounjaro for Diabetes and Weight Loss?"]"}
+  (Session info: chrome=144.0.7559.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7a544f3d5
+	0x7ff7a544f430
+	0x7ff7a51f10bd
+	0x7ff7a524c2fe
+	0x7ff7a524c60c
+	0x7ff7a529d187
+	0x7ff7a5299d08
+	0x7ff7a523cb0c
+	0x7ff7a523da53
+	0x7ff7a572b470
+	0x7ff7a572586d
+	0x7ff7a574621a
+	0x7ff7a546b235
+	0x7ff7a5473a5c
+	0x7ff7a5458844
+	0x7ff7a54589f6
+	0x7ff7a543eb87
+	0x7ffc7ccee8d7
+	0x7ffc7d20c53c
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Blog_AutoSuggestion</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Auto-suggestions are visible in Blog search
+Exiting the Suite
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Category_Selection</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Diabetes Management category opened successfully
+Exiting the Suite
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Generate_report</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Symptom checker completed successfully.
+Exiting the Suite
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Invalid_Article_Search</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>No results found message displayed
+Exiting the Suite
+</p>
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_Invalid_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">skip this test temporary</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 6, Pass: 4, Error: 1, Skip: 1 -- Duration: 135.20 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
